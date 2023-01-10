@@ -2,9 +2,8 @@ package app;
 
 import javax.swing.*;
 
-public class Main 
-{
-    public static void main( String[] args ) {
+public class Main {
+    public static void main(String[] args) {
     	JFrame frame = new JFrame();
     	JButton btn = new JButton("Click Me!");
     	// x axis, y axis, width, height
