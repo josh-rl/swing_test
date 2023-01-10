@@ -1,12 +1,7 @@
 package app;
 
-import java.io.*;
 import javax.swing.*;
 
-/**
- * Hello world!
- *
- */
 public class Main 
 {
     public static void main( String[] args ) {
@@ -18,5 +13,6 @@ public class Main
     	frame.setSize(500, 600);
     	frame.setLayout(null);
     	frame.setVisible(true);
+		frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
 }
