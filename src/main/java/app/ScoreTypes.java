@@ -1,5 +1,8 @@
 package app;
 
+/**
+ * Record of all score types in Yahtzee
+ */
 public enum ScoreTypes {
 	scoreOne,
 	scoreTwo,

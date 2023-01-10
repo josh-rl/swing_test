@@ -3,6 +3,9 @@ package app;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * Game state
+ */
 public abstract class State {
 	private static int num1s = 0;
 	private static int num2s = 0;
@@ -11,10 +14,13 @@ public abstract class State {
 	private static int num5s = 0;
 	private static int num6s = 0;
 
+	public Random rand;
 	public Player currPlayer;
 	public ArrayList<Player> players;
-	public Random rand;
+	public int currPlayerIndx;
+	public ScoreTypes selected;
 	public int[] diceVals;
+	public boolean[] diceRollState;
 	public int rollsRem;
 
 	public void setState() {
@@ -51,7 +57,7 @@ public abstract class State {
 		return 3 * num3s;
 	}
 
-	public int foursScore() {
+	public int getFoursScore() {
 		return 4 * num4s;
 	}
 
@@ -132,5 +138,30 @@ public abstract class State {
 			ret += ScoreTypes.yahtzeeBonusScore;
 		}
 		return ret;
+	}
+
+	public int getSelectionScore(ScoreTypes st) {
+		switch(st) {
+			case scoreOne: return getOnesScore();
+			case scoreTwo: return getTwosScore();
+			case scoreThree: return getThreesScore();
+			case scoreFour: return getFoursScore();
+			case scoreFive: return getFivesScore();
+			case scoreSix: return getSixesScore();
+			case scoreTop: return currPlayer.getTopTotal();
+			case scoreBonus: return getBonusScore();
+			case scoreTopTotal: return currPlayer.getTopGrandTotal();
+			case score3OfKind: return getThreeOfKindScore();
+			case score4OfKind: return getFourOfKindScore();
+			case scoreFullHouse: return getFullHouseScore();
+			case scoreSmallStr: return getSmallStrScore();
+			case scoreLargeStr: return getLargeStrScore();
+			case scoreYahtzee: return getYahtzeeScore();
+			case scoreChance: return getChanceScore();
+			case scoreYahtzeeBonus: return getBonusYahtzeeScore();
+			case scoreBottomTotal: return currPlayer.getBottomTotal();
+			case scoreGrandTotal: return currPlayer.getGrandTotal();
+			default: return 0;
+		}
 	}
 }
