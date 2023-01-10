@@ -93,8 +93,7 @@ public class Game extends State implements Control {
 
 	@Override
 	public boolean canRoll() {
-		if (rollsRem > 0) return true;
-		return false;
+		return rollsRem > 0;
 	}
 
 	@Override
@@ -113,8 +112,7 @@ public class Game extends State implements Control {
 	public boolean canSelect(ScoreTypes st) {
 		if (st == ScoreTypes.scoreYahtzeeBonus && currPlayer.yahtzeeCount < 1)
 			return false;
-		if (currPlayer.scoreMap.get(st) == 0) return true;
-		return false;
+		return currPlayer.scoreMap.get(st) == 0;
 	}
 
 	@Override
@@ -124,8 +122,7 @@ public class Game extends State implements Control {
 
 	@Override
 	public boolean canEnd() {
-		if (selected != null && rollsRem != 3) return true;
-		return false;
+		return selected != null && rollsRem != 3;
 	}
 
 	@Override
@@ -145,11 +142,10 @@ public class Game extends State implements Control {
 			clearState();
 			if (currPlayerIndx + 1 < players.size()) {
 				currPlayerIndx++;
-				currPlayer = players.get(currPlayerIndx);
 			} else {
 				currPlayerIndx = 0;
-				currPlayer = players.get(currPlayerIndx);
 			}
+			currPlayer = players.get(currPlayerIndx);
 			selected = null;
 			Arrays.fill(diceVals, 0);
 			Arrays.fill(diceRollState, true);
