@@ -1,4 +1,4 @@
-package app;
+package model;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -141,27 +141,27 @@ public abstract class State {
 	}
 
 	public int getSelectionScore(ScoreTypes st) {
-		switch(st) {
-			case scoreOne: return getOnesScore();
-			case scoreTwo: return getTwosScore();
-			case scoreThree: return getThreesScore();
-			case scoreFour: return getFoursScore();
-			case scoreFive: return getFivesScore();
-			case scoreSix: return getSixesScore();
-			case scoreTop: return currPlayer.getTopTotal();
-			case scoreBonus: return getBonusScore();
-			case scoreTopTotal: return currPlayer.getTopGrandTotal();
-			case score3OfKind: return getThreeOfKindScore();
-			case score4OfKind: return getFourOfKindScore();
-			case scoreFullHouse: return getFullHouseScore();
-			case scoreSmallStr: return getSmallStrScore();
-			case scoreLargeStr: return getLargeStrScore();
-			case scoreYahtzee: return getYahtzeeScore();
-			case scoreChance: return getChanceScore();
-			case scoreYahtzeeBonus: return getBonusYahtzeeScore();
-			case scoreBottomTotal: return currPlayer.getBottomTotal();
-			case scoreGrandTotal: return currPlayer.getGrandTotal();
-			default: return 0;
-		}
+		return switch (st) {
+			case scoreOne -> getOnesScore();
+			case scoreTwo -> getTwosScore();
+			case scoreThree -> getThreesScore();
+			case scoreFour -> getFoursScore();
+			case scoreFive -> getFivesScore();
+			case scoreSix -> getSixesScore();
+			case scoreTop -> currPlayer.getTopTotal();
+			case scoreBonus -> getBonusScore();
+			case scoreTopTotal -> currPlayer.getTopGrandTotal();
+			case score3OfKind -> getThreeOfKindScore();
+			case score4OfKind -> getFourOfKindScore();
+			case scoreFullHouse -> getFullHouseScore();
+			case scoreSmallStr -> getSmallStrScore();
+			case scoreLargeStr -> getLargeStrScore();
+			case scoreYahtzee -> getYahtzeeScore();
+			case scoreChance -> getChanceScore();
+			case scoreYahtzeeBonus -> getBonusYahtzeeScore();
+			case scoreBottomTotal -> currPlayer.getBottomTotal();
+			case scoreGrandTotal -> currPlayer.getGrandTotal();
+			default -> 0;
+		};
 	}
 }

@@ -1,4 +1,6 @@
-package app;
+package control;
+
+import model.ScoreTypes;
 
 /**
  * Defines game operations

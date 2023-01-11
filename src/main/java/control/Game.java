@@ -1,4 +1,9 @@
-package app;
+package control;
+
+import control.Control;
+import model.Player;
+import model.ScoreTypes;
+import model.State;
 
 import java.util.Arrays;
 import java.util.ArrayList;

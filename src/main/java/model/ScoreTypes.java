@@ -1,4 +1,4 @@
-package app;
+package model;
 
 /**
  * Record of all score types in Yahtzee
