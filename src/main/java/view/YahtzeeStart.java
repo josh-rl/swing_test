@@ -2,7 +2,7 @@ package view;
 
 import javax.swing.*;
 
-public class YahtzeeStart {
+public class YahtzeeStart extends JFrame {
     private JPanel yahtzeeStartPanel;
     private JPanel welcomeRow;
     private JPanel playerCountRow;
@@ -19,9 +19,16 @@ public class YahtzeeStart {
     private JRadioButton showRollFalse;
     private JRadioButton showRollTrue;
 
-    public JPanel getContainer() {
-        return yahtzeeStartPanel;
+    public YahtzeeStart(String title) {
+        super(title);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setContentPane(yahtzeeStartPanel);
+        this.setResizable(false);
+        this.pack();
     }
 
-    public YahtzeeStart() {}
+    public static void main(String[] args) {
+        JFrame frame = new YahtzeeStart("Yahtzee");
+        frame.setVisible(true);
+    }
 }

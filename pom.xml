@@ -27,7 +27,7 @@
 		<archive>
 			<manifest>
 				<addClasspath>true</addClasspath>
-				<mainClass>view.YahtzeeFrame</mainClass>
+				<mainClass>view.YahtzeeStart</mainClass>
 			</manifest>
 		</archive>
 		</configuration>
@@ -44,7 +44,7 @@
 			</execution>
 		</executions>
 		<configuration>
-			<mainClass>view.YahtzeeFrame</mainClass>
+			<mainClass>view.YahtzeeStart</mainClass>
 		</configuration>
 	</plugin>
 	</plugins>
