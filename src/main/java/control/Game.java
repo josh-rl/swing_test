@@ -1,6 +1,5 @@
 package control;
 
-import control.Control;
 import model.Player;
 import model.ScoreTypes;
 import model.State;

@@ -7,7 +7,6 @@ import java.util.HashMap;
  */
 public class Player {
 	public static int playerCount = 0;
-
 	public String name;
 	public HashMap<ScoreTypes, Integer> scoreMap;
 	public int yahtzeeCount;

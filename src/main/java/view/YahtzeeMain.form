@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.YahtzeeMain">
+  <grid id="27dc6" binding="mainRoot" layout-manager="CardLayout" hgap="0" vgap="0" show="f79c9">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <maximumSize width="400" height="300"/>
+      <minimumSize width="400" height="300"/>
+      <preferredSize width="400" height="300"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="f79c9" binding="startRoot" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <card name="startCard"/>
+        </constraints>
+        <properties>
+          <maximumSize width="-1" height="-1"/>
+          <minimumSize width="-1" height="-1"/>
+          <preferredSize width="-1" height="-1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="c6d0b" class="javax.swing.JButton" binding="prevStart">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <enabled value="false"/>
+              <text value="Previous"/>
+            </properties>
+          </component>
+          <component id="62e8d" class="javax.swing.JButton" binding="nextStart">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Next"/>
+            </properties>
+          </component>
+          <component id="b17d7" class="javax.swing.JLabel" binding="startLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Start Screen"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="8de29" binding="playerRoot" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <card name="playerCard"/>
+        </constraints>
+        <properties>
+          <maximumSize width="-1" height="-1"/>
+          <minimumSize width="-1" height="-1"/>
+          <preferredSize width="-1" height="-1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="91b7d" class="javax.swing.JButton" binding="prevPlayer">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Previous"/>
+            </properties>
+          </component>
+          <component id="f289c" class="javax.swing.JButton" binding="nextPlayer">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Next"/>
+            </properties>
+          </component>
+          <component id="7f324" class="javax.swing.JLabel" binding="playerLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Player Screen"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="68a86" binding="virtDiceRoot" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <card name="virtDiceCard"/>
+        </constraints>
+        <properties>
+          <maximumSize width="-1" height="-1"/>
+          <minimumSize width="-1" height="-1"/>
+          <preferredSize width="-1" height="-1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="6b55f" class="javax.swing.JButton" binding="prevVD">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Previous"/>
+            </properties>
+          </component>
+          <component id="7b42b" class="javax.swing.JButton" binding="nextVD">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Next"/>
+            </properties>
+          </component>
+          <component id="c02c2" class="javax.swing.JLabel" binding="vdLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Virtual Dice Screen"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="831d0" binding="realDiceRoot" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <card name="realDiceCard"/>
+        </constraints>
+        <properties>
+          <maximumSize width="-1" height="-1"/>
+          <minimumSize width="-1" height="-1"/>
+          <preferredSize width="-1" height="-1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="98472" class="javax.swing.JButton" binding="prevRD">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Previous"/>
+            </properties>
+          </component>
+          <component id="8aeb5" class="javax.swing.JButton" binding="nextRD">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Next"/>
+            </properties>
+          </component>
+          <component id="5bcc3" class="javax.swing.JLabel" binding="rdLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Real Dice Screen"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="21f17" binding="endGameRoot" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <card name="endGameCard"/>
+        </constraints>
+        <properties>
+          <maximumSize width="-1" height="-1"/>
+          <minimumSize width="-1" height="-1"/>
+          <preferredSize width="-1" height="-1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="41de7" class="javax.swing.JButton" binding="prevEG">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Previous"/>
+            </properties>
+          </component>
+          <component id="97793" class="javax.swing.JButton" binding="nextEG">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <enabled value="false"/>
+              <text value="Next"/>
+            </properties>
+          </component>
+          <component id="ba4c9" class="javax.swing.JLabel" binding="egLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="End Game Screen"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

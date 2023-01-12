@@ -71,7 +71,7 @@ public abstract class State {
 
 	public int getBonusScore() {
 		int ret = 0;
-		if (currPlayer.getTopTotal() >= 63) ret += 35;
+		if (currPlayer.getTopTotal() >= 63) ret += ScoreTypes.bonusScore;
 		return ret;
 	}
 
