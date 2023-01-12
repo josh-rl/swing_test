@@ -454,7 +454,11 @@
         <constraints>
           <card name="nameConfirmCard"/>
         </constraints>
-        <properties/>
+        <properties>
+          <maximumSize width="-1" height="-1"/>
+          <minimumSize width="-1" height="-1"/>
+          <preferredSize width="-1" height="-1"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="e4dd5" class="javax.swing.JLabel" binding="confirmWelcome">
@@ -473,7 +477,7 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="99ec2" class="javax.swing.JLabel">
+              <component id="99ec2" class="javax.swing.JLabel" binding="confirmDiceModeLabel">
                 <constraints/>
                 <properties>
                   <font name="Consolas" size="12" style="0"/>
@@ -496,7 +500,7 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="10f93" class="javax.swing.JLabel">
+              <component id="10f93" class="javax.swing.JLabel" binding="confirmP1Label">
                 <constraints/>
                 <properties>
                   <font name="Consolas" size="12" style="0"/>
@@ -519,7 +523,7 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="15b38" class="javax.swing.JLabel">
+              <component id="15b38" class="javax.swing.JLabel" binding="confirmP2Label">
                 <constraints/>
                 <properties>
                   <font name="Consolas" size="12" style="0"/>
@@ -542,7 +546,7 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="9e196" class="javax.swing.JLabel">
+              <component id="9e196" class="javax.swing.JLabel" binding="confirmP3Label">
                 <constraints/>
                 <properties>
                   <font name="Consolas" size="12" style="0"/>
@@ -565,7 +569,7 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="fec31" class="javax.swing.JLabel">
+              <component id="fec31" class="javax.swing.JLabel" binding="confirmP4Label">
                 <constraints/>
                 <properties>
                   <font name="Consolas" size="12" style="0"/>
@@ -588,7 +592,7 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="146d0" class="javax.swing.JLabel">
+              <component id="146d0" class="javax.swing.JLabel" binding="confirmP5Label">
                 <constraints/>
                 <properties>
                   <font name="Consolas" size="12" style="0"/>
@@ -611,7 +615,7 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="97f0e" class="javax.swing.JLabel">
+              <component id="97f0e" class="javax.swing.JLabel" binding="confirmP6Label">
                 <constraints/>
                 <properties>
                   <font name="Consolas" size="12" style="0"/>
@@ -690,7 +694,7 @@
       <grid id="68a86" binding="virtDiceRoot" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <card name="Card2"/>
+          <card name="virtDiceCard"/>
         </constraints>
         <properties>
           <maximumSize width="-1" height="-1"/>
@@ -703,7 +707,7 @@
       <grid id="831d0" binding="realDiceRoot" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <card name="Card3"/>
+          <card name="realDiceCard"/>
         </constraints>
         <properties>
           <maximumSize width="-1" height="-1"/>
@@ -716,7 +720,7 @@
       <grid id="21f17" binding="endGameRoot" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <card name="Card4"/>
+          <card name="endGameCard"/>
         </constraints>
         <properties>
           <maximumSize width="-1" height="-1"/>

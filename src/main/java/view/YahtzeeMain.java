@@ -83,6 +83,13 @@ public class YahtzeeMain extends JFrame {
     private JLabel p4NameConfirm;
     private JLabel p5NameConfirm;
     private JLabel p6NameConfirm;
+    private JLabel confirmDiceModeLabel;
+    private JLabel confirmP1Label;
+    private JLabel confirmP2Label;
+    private JLabel confirmP3Label;
+    private JLabel confirmP4Label;
+    private JLabel confirmP5Label;
+    private JLabel confirmP6Label;
 
 
     public YahtzeeMain(String title) {
@@ -203,7 +210,6 @@ public class YahtzeeMain extends JFrame {
         confirmNextBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-//                yahzteeGame = new Game();
                 if (player1Name.length() == 0) yahzteeGame.addPlayer();
                 else yahzteeGame.addPlayer(player1Name);
                 if (player2Name.length() == 0) yahzteeGame.addPlayer();
@@ -216,9 +222,6 @@ public class YahtzeeMain extends JFrame {
                 else if (numPlayers > 4) yahzteeGame.addPlayer(player5Name);
                 if (numPlayers > 5 && player6Name.length() == 0) yahzteeGame.addPlayer();
                 else if (numPlayers > 5) yahzteeGame.addPlayer(player6Name);
-//                for (Player p : yahzteeGame.players) {
-//                    System.out.println(p.name);
-//                }
                 yahzteeGame.startGame();
             }
         });
