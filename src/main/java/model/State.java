@@ -25,13 +25,13 @@ public abstract class State {
 
 	public void setState() {
 		for (int i : diceVals) {
-			switch(i) {
-				case 1: num1s++; break;
-				case 2: num2s++; break;
-				case 3: num3s++; break;
-				case 4: num4s++; break;
-				case 5: num5s++; break;
-				case 6: num6s++; break;
+			switch (i) {
+				case 1 -> num1s++;
+				case 2 -> num2s++;
+				case 3 -> num3s++;
+				case 4 -> num4s++;
+				case 5 -> num5s++;
+				case 6 -> num6s++;
 			}
 		}
 	}
@@ -46,7 +46,7 @@ public abstract class State {
 	}
 
 	public int getOnesScore() {
-		return 1 * num1s;
+		return num1s;
 	}
 
 	public int getTwosScore() {
@@ -78,7 +78,7 @@ public abstract class State {
 	public int getThreeOfKindScore() {
 		int ret = 0;
 		if (num1s > 2 || num2s > 2 || num3s > 2 || num4s > 2 || num5s > 2 || num6s > 2) {
-			ret += (1 * num1s) + (2 * num2s) + (3 * num3s) + (4 * num4s) + (5 * num5s) + (6 * num6s);
+			ret += (num1s) + (2 * num2s) + (3 * num3s) + (4 * num4s) + (5 * num5s) + (6 * num6s);
 		}
 		return ret;
 	}
@@ -86,7 +86,7 @@ public abstract class State {
 	public int getFourOfKindScore() {
 		int ret = 0;
 		if (num1s > 3 || num2s > 3 || num3s > 3 || num4s > 3 || num5s > 3 || num6s > 3) {
-			ret += (1 * num1s) + (2 * num2s) + (3 * num3s) + (4 * num4s) + (5 * num5s) + (6 * num6s);
+			ret += (num1s) + (2 * num2s) + (3 * num3s) + (4 * num4s) + (5 * num5s) + (6 * num6s);
 		}
 		return ret;
 	}
@@ -129,7 +129,7 @@ public abstract class State {
 	}
 
 	public int getChanceScore() {
-		return (1 * num1s) + (2 * num2s) + (3 * num3s) + (4 * num4s) + (5 * num5s) + (6 * num6s);
+		return (num1s) + (2 * num2s) + (3 * num3s) + (4 * num4s) + (5 * num5s) + (6 * num6s);
 	}
 
 	public int getBonusYahtzeeScore() {
@@ -161,7 +161,6 @@ public abstract class State {
 			case scoreYahtzeeBonus -> getBonusYahtzeeScore();
 			case scoreBottomTotal -> currPlayer.getBottomTotal();
 			case scoreGrandTotal -> currPlayer.getGrandTotal();
-			default -> 0;
 		};
 	}
 }

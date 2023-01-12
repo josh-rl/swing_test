@@ -97,7 +97,7 @@ public class Player {
 
 	/**
 	 * Add top half grand total with bottom half total
-	 * @return
+	 * @return Integer
 	 */
 	public int getGrandTotal() {
 		return getTopGrandTotal() + getBottomTotal();

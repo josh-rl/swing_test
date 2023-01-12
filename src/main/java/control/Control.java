@@ -2,28 +2,29 @@ package control;
 
 import model.ScoreTypes;
 
+
 /**
  * Defines game operations
  */
+@SuppressWarnings("unused")
 public interface Control {
-	public void addPlayer();
-	public void addPlayer(String name);
-	public void removePlayer(int amount);
-	public void startGame();
-	public void rollDie1();
-	public void rollDie2();
-	public void rollDie3();
-	public void rollDie4();
-	public void rollDie5();
-	public void toggleDie1();
-	public void toggleDie2();
-	public void toggleDie3();
-	public void toggleDie4();
-	public void toggleDie5();
-	public boolean canRoll();
-	public void doRolls(int rolls);
-	public boolean canSelect(ScoreTypes st);
-	public void makeSelection(ScoreTypes st);
-	public boolean canEnd();
-	public boolean endTurn();
+	void addPlayer();
+	void addPlayer(String name);
+	void startGame();
+	void rollDie1();
+	void rollDie2();
+	void rollDie3();
+	void rollDie4();
+	void rollDie5();
+	void toggleDie1();
+	void toggleDie2();
+	void toggleDie3();
+	void toggleDie4();
+	void toggleDie5();
+	boolean canRoll();
+	void doRolls(int rolls);
+	boolean canSelect(ScoreTypes st);
+	void makeSelection(ScoreTypes st);
+	boolean canEnd();
+	boolean endTurn();
 }

@@ -33,14 +33,6 @@ public class Game extends State implements Control {
 	}
 
 	@Override
-	public void removePlayer(int amount) {
-		int lim = Player.playerCount;
-		for (int i = lim - 1; i > lim - amount; i--) {
-			players.remove(i);
-		}
-	}
-
-	@Override
 	public void startGame() {
 		currPlayer = players.get(0);
 	}
