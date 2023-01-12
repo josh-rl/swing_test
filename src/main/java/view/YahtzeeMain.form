@@ -2,16 +2,16 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.YahtzeeMain">
   <grid id="27dc6" binding="mainRoot" layout-manager="CardLayout" hgap="0" vgap="0" show="f79c9">
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
+      <xy x="20" y="20" width="500" height="450"/>
     </constraints>
     <properties>
-      <maximumSize width="400" height="300"/>
-      <minimumSize width="400" height="300"/>
-      <preferredSize width="400" height="300"/>
+      <maximumSize width="500" height="400"/>
+      <minimumSize width="500" height="400"/>
+      <preferredSize width="500" height="400"/>
     </properties>
     <border type="none"/>
     <children>
-      <grid id="f79c9" binding="startRoot" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="f79c9" binding="startRoot" layout-manager="GridLayoutManager" row-count="11" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <card name="startCard"/>
@@ -23,34 +23,202 @@
         </properties>
         <border type="none"/>
         <children>
-          <component id="c6d0b" class="javax.swing.JButton" binding="prevStart">
+          <component id="70953" class="javax.swing.JLabel" binding="welcomeLabel">
             <constraints>
-              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <enabled value="false"/>
-              <text value="Previous"/>
+              <font name="Consolas" size="20" style="1"/>
+              <text value="Welcome to the game of Yahtzee!"/>
             </properties>
           </component>
-          <component id="62e8d" class="javax.swing.JButton" binding="nextStart">
+          <component id="5d852" class="javax.swing.JLabel" binding="numPlayersLabel">
             <constraints>
-              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Next"/>
+              <font name="Consolas" size="12" style="0"/>
+              <text value="Select number of players:"/>
             </properties>
           </component>
-          <component id="b17d7" class="javax.swing.JLabel" binding="startLabel">
+          <grid id="cbfd" binding="numPlayersBtnGroup" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="7971" class="javax.swing.JRadioButton" binding="twoPlayersBtn">
+                <constraints/>
+                <properties>
+                  <font name="Consolas" size="12" style="0"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <maximumSize width="50" height="45"/>
+                  <minimumSize width="50" height="45"/>
+                  <preferredSize width="50" height="45"/>
+                  <selected value="true"/>
+                  <text value="2"/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="6e538" class="javax.swing.JRadioButton" binding="threePlayersBtn">
+                <constraints/>
+                <properties>
+                  <font name="Consolas" size="12" style="0"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <maximumSize width="50" height="45"/>
+                  <minimumSize width="50" height="45"/>
+                  <preferredSize width="50" height="45"/>
+                  <text value="3"/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="bd2d" class="javax.swing.JRadioButton" binding="fourPlayersBtn">
+                <constraints/>
+                <properties>
+                  <font name="Consolas" size="12" style="0"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <maximumSize width="50" height="45"/>
+                  <minimumSize width="50" height="45"/>
+                  <preferredSize width="50" height="45"/>
+                  <text value="4"/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="4a08b" class="javax.swing.JRadioButton" binding="fivePlayersBtn">
+                <constraints/>
+                <properties>
+                  <font name="Consolas" size="12" style="0"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <maximumSize width="50" height="45"/>
+                  <minimumSize width="50" height="45"/>
+                  <preferredSize width="50" height="45"/>
+                  <text value="5"/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="a8124" class="javax.swing.JRadioButton" binding="sixPlayersBtn">
+                <constraints/>
+                <properties>
+                  <font name="Consolas" size="12" style="0"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <maximumSize width="50" height="45"/>
+                  <minimumSize width="50" height="45"/>
+                  <preferredSize width="50" height="45"/>
+                  <text value="6"/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <component id="1e4d0" class="javax.swing.JLabel" binding="optionsLabel">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Start Screen"/>
+              <font name="Consolas" size="12" style="0"/>
+              <text value="Options:"/>
             </properties>
           </component>
+          <grid id="cba10" binding="optionBtnGroup" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="debad" class="javax.swing.JRadioButton" binding="virtDiceBtn">
+                <constraints/>
+                <properties>
+                  <font name="Consolas" size="12" style="0"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <maximumSize width="90" height="45"/>
+                  <minimumSize width="90" height="45"/>
+                  <preferredSize width="90" height="45"/>
+                  <selected value="true"/>
+                  <text value="Virtual Dice"/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="2286c" class="javax.swing.JRadioButton" binding="realDiceBtn">
+                <constraints/>
+                <properties>
+                  <enabled value="false"/>
+                  <font name="Consolas" size="12" style="0"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <maximumSize width="80" height="45"/>
+                  <minimumSize width="80" height="45"/>
+                  <preferredSize width="80" height="45"/>
+                  <text value="Real Dice"/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="bcb0d" binding="continueBtnGroup" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="da7cb" class="javax.swing.JButton" binding="toPlayerNames">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Consolas" size="12" style="1"/>
+                  <text value="Next"/>
+                </properties>
+              </component>
+              <hspacer id="85776">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="3cebe">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+            </children>
+          </grid>
+          <vspacer id="80983">
+            <constraints>
+              <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="9f4cb">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="79a58">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="a625">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="bcce4">
+            <constraints>
+              <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
         </children>
       </grid>
-      <grid id="8de29" binding="playerRoot" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="8de29" binding="playerRoot" layout-manager="GridLayoutManager" row-count="12" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <card name="playerCard"/>
@@ -62,36 +230,238 @@
         </properties>
         <border type="none"/>
         <children>
-          <component id="91b7d" class="javax.swing.JButton" binding="prevPlayer">
+          <component id="e4832" class="javax.swing.JLabel" binding="playersWelcome">
             <constraints>
-              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Previous"/>
+              <font name="Consolas" size="20" style="1"/>
+              <text value="Enter player names:"/>
             </properties>
           </component>
-          <component id="f289c" class="javax.swing.JButton" binding="nextPlayer">
+          <vspacer id="8c6bc">
             <constraints>
-              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
             </constraints>
-            <properties>
-              <text value="Next"/>
-            </properties>
-          </component>
-          <component id="7f324" class="javax.swing.JLabel" binding="playerLabel">
+          </vspacer>
+          <vspacer id="c3d36">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
             </constraints>
-            <properties>
-              <text value="Player Screen"/>
-            </properties>
-          </component>
+          </vspacer>
+          <vspacer id="5ce61">
+            <constraints>
+              <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <grid id="e347e" binding="player1Row" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="b420a" class="javax.swing.JLabel" binding="player1Label">
+                <constraints/>
+                <properties>
+                  <font name="Consolas" size="12" style="0"/>
+                  <text value="Player 1:"/>
+                </properties>
+              </component>
+              <component id="87c5c" class="javax.swing.JTextField" binding="player1Input">
+                <constraints/>
+                <properties>
+                  <font name="Consolas" size="12" style="1"/>
+                  <maximumSize width="200" height="30"/>
+                  <minimumSize width="200" height="30"/>
+                  <preferredSize width="200" height="30"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="7f863" binding="player2Row" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="5591d" class="javax.swing.JLabel" binding="player2Label">
+                <constraints/>
+                <properties>
+                  <font name="Consolas" size="12" style="0"/>
+                  <text value="Player 2:"/>
+                </properties>
+              </component>
+              <component id="4bb98" class="javax.swing.JTextField" binding="player2Input">
+                <constraints/>
+                <properties>
+                  <font name="Consolas" size="12" style="1"/>
+                  <maximumSize width="200" height="30"/>
+                  <minimumSize width="200" height="30"/>
+                  <preferredSize width="200" height="30"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="7941" binding="player3Row" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="22e1e" class="javax.swing.JLabel" binding="player3Label">
+                <constraints/>
+                <properties>
+                  <font name="Consolas" size="12" style="0"/>
+                  <text value="Player 3:"/>
+                </properties>
+              </component>
+              <component id="2d5a7" class="javax.swing.JTextField" binding="player3Input">
+                <constraints/>
+                <properties>
+                  <font name="Consolas" size="12" style="1"/>
+                  <maximumSize width="200" height="30"/>
+                  <minimumSize width="200" height="30"/>
+                  <preferredSize width="200" height="30"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="7d4d8" binding="player4Row" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="64dbc" class="javax.swing.JLabel" binding="player4Label">
+                <constraints/>
+                <properties>
+                  <font name="Consolas" size="12" style="0"/>
+                  <text value="Player 4:"/>
+                </properties>
+              </component>
+              <component id="c586b" class="javax.swing.JTextField" binding="player4Input">
+                <constraints/>
+                <properties>
+                  <font name="Consolas" size="12" style="1"/>
+                  <maximumSize width="200" height="30"/>
+                  <minimumSize width="200" height="30"/>
+                  <preferredSize width="200" height="30"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="a07fc" binding="player5Row" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="671ef" class="javax.swing.JLabel" binding="player5Label">
+                <constraints/>
+                <properties>
+                  <font name="Consolas" size="12" style="0"/>
+                  <text value="Player 5:"/>
+                </properties>
+              </component>
+              <component id="361e2" class="javax.swing.JTextField" binding="player5Input">
+                <constraints/>
+                <properties>
+                  <font name="Consolas" size="12" style="1"/>
+                  <maximumSize width="200" height="30"/>
+                  <minimumSize width="200" height="30"/>
+                  <preferredSize width="200" height="30"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="45f12" binding="player6Row" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="9b371" class="javax.swing.JLabel" binding="player6Label">
+                <constraints/>
+                <properties>
+                  <font name="Consolas" size="12" style="0"/>
+                  <text value="Player 6:"/>
+                </properties>
+              </component>
+              <component id="22f4b" class="javax.swing.JTextField" binding="player6Input">
+                <constraints/>
+                <properties>
+                  <font name="Consolas" size="12" style="1"/>
+                  <maximumSize width="200" height="30"/>
+                  <minimumSize width="200" height="30"/>
+                  <preferredSize width="200" height="30"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="5b708" binding="playerNamesPanelBtnGroup" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="65aa8" class="javax.swing.JButton" binding="playerNamesBack">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Consolas" size="12" style="1"/>
+                  <text value="Back"/>
+                </properties>
+              </component>
+              <component id="a14db" class="javax.swing.JButton" binding="playerNamesConfirmBtn">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Consolas" size="12" style="1"/>
+                  <text value="Next"/>
+                </properties>
+              </component>
+              <hspacer id="c8d80">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="472ed">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+            </children>
+          </grid>
+          <vspacer id="3958e">
+            <constraints>
+              <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
         </children>
       </grid>
-      <grid id="68a86" binding="virtDiceRoot" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="a820f" binding="nameConfirmRoot" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <card name="virtDiceCard"/>
+          <card name="nameConfirmCard"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="68a86" binding="virtDiceRoot" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <card name="Card2"/>
         </constraints>
         <properties>
           <maximumSize width="-1" height="-1"/>
@@ -99,37 +469,12 @@
           <preferredSize width="-1" height="-1"/>
         </properties>
         <border type="none"/>
-        <children>
-          <component id="6b55f" class="javax.swing.JButton" binding="prevVD">
-            <constraints>
-              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Previous"/>
-            </properties>
-          </component>
-          <component id="7b42b" class="javax.swing.JButton" binding="nextVD">
-            <constraints>
-              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Next"/>
-            </properties>
-          </component>
-          <component id="c02c2" class="javax.swing.JLabel" binding="vdLabel">
-            <constraints>
-              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Virtual Dice Screen"/>
-            </properties>
-          </component>
-        </children>
+        <children/>
       </grid>
-      <grid id="831d0" binding="realDiceRoot" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="831d0" binding="realDiceRoot" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <card name="realDiceCard"/>
+          <card name="Card3"/>
         </constraints>
         <properties>
           <maximumSize width="-1" height="-1"/>
@@ -137,37 +482,12 @@
           <preferredSize width="-1" height="-1"/>
         </properties>
         <border type="none"/>
-        <children>
-          <component id="98472" class="javax.swing.JButton" binding="prevRD">
-            <constraints>
-              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Previous"/>
-            </properties>
-          </component>
-          <component id="8aeb5" class="javax.swing.JButton" binding="nextRD">
-            <constraints>
-              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Next"/>
-            </properties>
-          </component>
-          <component id="5bcc3" class="javax.swing.JLabel" binding="rdLabel">
-            <constraints>
-              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Real Dice Screen"/>
-            </properties>
-          </component>
-        </children>
+        <children/>
       </grid>
-      <grid id="21f17" binding="endGameRoot" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="21f17" binding="endGameRoot" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <card name="endGameCard"/>
+          <card name="Card4"/>
         </constraints>
         <properties>
           <maximumSize width="-1" height="-1"/>
@@ -175,34 +495,21 @@
           <preferredSize width="-1" height="-1"/>
         </properties>
         <border type="none"/>
-        <children>
-          <component id="41de7" class="javax.swing.JButton" binding="prevEG">
-            <constraints>
-              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Previous"/>
-            </properties>
-          </component>
-          <component id="97793" class="javax.swing.JButton" binding="nextEG">
-            <constraints>
-              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <enabled value="false"/>
-              <text value="Next"/>
-            </properties>
-          </component>
-          <component id="ba4c9" class="javax.swing.JLabel" binding="egLabel">
-            <constraints>
-              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="End Game Screen"/>
-            </properties>
-          </component>
-        </children>
+        <children/>
       </grid>
     </children>
   </grid>
+  <buttonGroups>
+    <group name="numPlayersGroup">
+      <member id="7971"/>
+      <member id="6e538"/>
+      <member id="bd2d"/>
+      <member id="4a08b"/>
+      <member id="a8124"/>
+    </group>
+    <group name="diceOptionGroup">
+      <member id="debad"/>
+      <member id="2286c"/>
+    </group>
+  </buttonGroups>
 </form>
