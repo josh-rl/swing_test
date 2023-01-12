@@ -1,8 +1,12 @@
 package view;
 
 import control.*;
+import model.Player;
+
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 @SuppressWarnings("unused")
 public class YahtzeeMain extends JFrame {
@@ -61,7 +65,24 @@ public class YahtzeeMain extends JFrame {
     private JPanel playerNamesPanelBtnGroup;
     private JButton playerNamesBack;
     private JButton playerNamesConfirmBtn;
-
+    private JLabel confirmWelcome;
+    private JButton confirmPrevBtn;
+    private JButton confirmNextBtn;
+    private JPanel confirmDiceRow;
+    private JPanel confirmP1Row;
+    private JPanel confirmP2Row;
+    private JPanel confirmP3Row;
+    private JPanel confirmP4Row;
+    private JPanel confirmP5Row;
+    private JPanel confirmP6Row;
+    private JPanel namesCofirmPanelBtnGroup;
+    private JLabel diceModeConfirm;
+    private JLabel p1NameConfirm;
+    private JLabel p2NameConfirm;
+    private JLabel p3NameConfirm;
+    private JLabel p4NameConfirm;
+    private JLabel p5NameConfirm;
+    private JLabel p6NameConfirm;
 
 
     public YahtzeeMain(String title) {
@@ -87,6 +108,10 @@ public class YahtzeeMain extends JFrame {
         player4Row.setVisible(false);
         player5Row.setVisible(false);
         player6Row.setVisible(false);
+        confirmP3Row.setVisible(false);
+        confirmP4Row.setVisible(false);
+        confirmP5Row.setVisible(false);
+        confirmP6Row.setVisible(false);
 
         twoPlayersBtn.addActionListener(e -> {
             numPlayers = 2;
@@ -94,6 +119,10 @@ public class YahtzeeMain extends JFrame {
             player4Row.setVisible(false);
             player5Row.setVisible(false);
             player6Row.setVisible(false);
+            confirmP3Row.setVisible(false);
+            confirmP4Row.setVisible(false);
+            confirmP5Row.setVisible(false);
+            confirmP6Row.setVisible(false);
         });
         threePlayersBtn.addActionListener(e -> {
             numPlayers = 3;
@@ -101,6 +130,10 @@ public class YahtzeeMain extends JFrame {
             player4Row.setVisible(false);
             player5Row.setVisible(false);
             player6Row.setVisible(false);
+            confirmP3Row.setVisible(true);
+            confirmP4Row.setVisible(false);
+            confirmP5Row.setVisible(false);
+            confirmP6Row.setVisible(false);
         });
         fourPlayersBtn.addActionListener(e -> {
             numPlayers = 4;
@@ -108,6 +141,10 @@ public class YahtzeeMain extends JFrame {
             player4Row.setVisible(true);
             player5Row.setVisible(false);
             player6Row.setVisible(false);
+            confirmP3Row.setVisible(true);
+            confirmP4Row.setVisible(true);
+            confirmP5Row.setVisible(false);
+            confirmP6Row.setVisible(false);
         });
         fivePlayersBtn.addActionListener(e -> {
             numPlayers = 5;
@@ -115,6 +152,10 @@ public class YahtzeeMain extends JFrame {
             player4Row.setVisible(true);
             player5Row.setVisible(true);
             player6Row.setVisible(false);
+            confirmP3Row.setVisible(true);
+            confirmP4Row.setVisible(true);
+            confirmP5Row.setVisible(true);
+            confirmP6Row.setVisible(false);
         });
         sixPlayersBtn.addActionListener(e -> {
             numPlayers = 6;
@@ -122,15 +163,64 @@ public class YahtzeeMain extends JFrame {
             player4Row.setVisible(true);
             player5Row.setVisible(true);
             player6Row.setVisible(true);
+            confirmP3Row.setVisible(true);
+            confirmP4Row.setVisible(true);
+            confirmP5Row.setVisible(true);
+            confirmP6Row.setVisible(true);
         });
-        virtDiceBtn.addActionListener(e -> virtDice = true);
-        realDiceBtn.addActionListener(e -> virtDice = false);
+        virtDiceBtn.addActionListener(e -> {
+            virtDice = true;
+            diceModeConfirm.setText("Virtual");
+        });
+        realDiceBtn.addActionListener(e -> {
+            virtDice = false;
+            diceModeConfirm.setText("Real");
+        });
         toPlayerNames.addActionListener(e -> ((CardLayout)mainRoot.getLayout()).show(mainRoot, "playerCard"));
         playerNamesBack.addActionListener(e -> ((CardLayout)mainRoot.getLayout()).show(mainRoot, "startCard"));
         playerNamesConfirmBtn.addActionListener(e -> {
-            // TODO: Add players, Validate intput, Start game
-            if (virtDice) ((CardLayout)mainRoot.getLayout()).show(mainRoot, "virtDiceCard");
-            else ((CardLayout)mainRoot.getLayout()).show(mainRoot, "realDiceCard");
+            player1Name = player1Input.getText();
+            player2Name = player2Input.getText();
+            player3Name = player3Input.getText();
+            player4Name = player4Input.getText();
+            player5Name = player5Input.getText();
+            player6Name = player6Input.getText();
+            if (player1Name.length() == 0) p1NameConfirm.setText("Player 1");
+            else p1NameConfirm.setText(player1Name);
+            if (player2Name.length() == 0) p2NameConfirm.setText("Player 2");
+            else p2NameConfirm.setText(player2Name);
+            if (player3Name.length() == 0) p3NameConfirm.setText("Player 3");
+            else p3NameConfirm.setText(player3Name);
+            if (player4Name.length() == 0) p4NameConfirm.setText("Player 4");
+            else p4NameConfirm.setText(player4Name);
+            if (player5Name.length() == 0) p5NameConfirm.setText("Player 5");
+            else p5NameConfirm.setText(player5Name);
+            if (player6Name.length() == 0) p6NameConfirm.setText("Player 6");
+            else p6NameConfirm.setText(player6Name);
+            ((CardLayout)mainRoot.getLayout()).show(mainRoot, "nameConfirmCard");
+        });
+        confirmPrevBtn.addActionListener(e -> ((CardLayout)mainRoot.getLayout()).show(mainRoot, "playerCard"));
+        confirmNextBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+//                yahzteeGame = new Game();
+                if (player1Name.length() == 0) yahzteeGame.addPlayer();
+                else yahzteeGame.addPlayer(player1Name);
+                if (player2Name.length() == 0) yahzteeGame.addPlayer();
+                else yahzteeGame.addPlayer(player2Name);
+                if (numPlayers > 2 && player3Name.length() == 0) yahzteeGame.addPlayer();
+                else if (numPlayers > 2) yahzteeGame.addPlayer(player3Name);
+                if (numPlayers > 3 && player4Name.length() == 0) yahzteeGame.addPlayer();
+                else if (numPlayers > 3) yahzteeGame.addPlayer(player4Name);
+                if (numPlayers > 4 && player5Name.length() == 0) yahzteeGame.addPlayer();
+                else if (numPlayers > 4) yahzteeGame.addPlayer(player5Name);
+                if (numPlayers > 5 && player6Name.length() == 0) yahzteeGame.addPlayer();
+                else if (numPlayers > 5) yahzteeGame.addPlayer(player6Name);
+//                for (Player p : yahzteeGame.players) {
+//                    System.out.println(p.name);
+//                }
+                yahzteeGame.startGame();
+            }
         });
     }
 

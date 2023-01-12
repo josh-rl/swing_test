@@ -10,6 +10,7 @@ import java.util.Random;
 
 public class Game extends State implements Control {
 	public Game() {
+		Player.playerCount = 0;
 		rand = new Random();
 		currPlayer = null;
 		players = new ArrayList<>();
