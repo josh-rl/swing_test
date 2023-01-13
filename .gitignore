@@ -20,3 +20,5 @@ buildNumber.properties
 
 .vscode
 .idea
+out
+out/*

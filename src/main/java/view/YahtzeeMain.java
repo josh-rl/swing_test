@@ -1,7 +1,6 @@
 package view;
 
 import control.*;
-import model.Player;
 
 import javax.swing.*;
 import java.awt.*;
@@ -183,8 +182,8 @@ public class YahtzeeMain extends JFrame {
             virtDice = false;
             diceModeConfirm.setText("Real");
         });
-        toPlayerNames.addActionListener(e -> ((CardLayout)mainRoot.getLayout()).show(mainRoot, "playerCard"));
-        playerNamesBack.addActionListener(e -> ((CardLayout)mainRoot.getLayout()).show(mainRoot, "startCard"));
+        toPlayerNames.addActionListener(e -> ((CardLayout) mainRoot.getLayout()).show(mainRoot, "playerCard"));
+        playerNamesBack.addActionListener(e -> ((CardLayout) mainRoot.getLayout()).show(mainRoot, "startCard"));
         playerNamesConfirmBtn.addActionListener(e -> {
             player1Name = player1Input.getText();
             player2Name = player2Input.getText();
@@ -204,9 +203,9 @@ public class YahtzeeMain extends JFrame {
             else p5NameConfirm.setText(player5Name);
             if (player6Name.length() == 0) p6NameConfirm.setText("Player 6");
             else p6NameConfirm.setText(player6Name);
-            ((CardLayout)mainRoot.getLayout()).show(mainRoot, "nameConfirmCard");
+            ((CardLayout) mainRoot.getLayout()).show(mainRoot, "nameConfirmCard");
         });
-        confirmPrevBtn.addActionListener(e -> ((CardLayout)mainRoot.getLayout()).show(mainRoot, "playerCard"));
+        confirmPrevBtn.addActionListener(e -> ((CardLayout) mainRoot.getLayout()).show(mainRoot, "playerCard"));
         confirmNextBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -231,4 +230,5 @@ public class YahtzeeMain extends JFrame {
         JFrame frame = new YahtzeeMain("Yahtzee");
         frame.setVisible(true);
     }
+
 }
