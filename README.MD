@@ -11,6 +11,5 @@ installed, download the v0.3-beta jar file, run yahtzee.jar
 
 ## Source code
 - Uses Intellij GUI designer.
-- Could not find a pom plugin that supports this GUI
-form designer for package compilation.
-- Executable creation done through Intellij -> build artifact
+- Build/compile with Intellij.
+- Create executable with 'mvn jar:jar'
