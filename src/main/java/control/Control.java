@@ -21,5 +21,5 @@ public interface Control {
 	boolean canRoll();
 	void doRolls();
 	boolean canEnd();
-	boolean endTurn();
+	void endTurn();
 }

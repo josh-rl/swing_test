@@ -19,6 +19,7 @@ public class Player {
 		playerCount++;
 		name = "Player " + Player.playerCount; 
 		scoreMap = new HashMap<>();
+		pickMap = new HashMap<>();
 		for (ScoreTypes st : ScoreTypes.values()) {
 			scoreMap.put(st, 0);
 			pickMap.put(st, false);
@@ -34,6 +35,7 @@ public class Player {
 		playerCount++;
 		this.name = name;
 		scoreMap = new HashMap<>();
+		pickMap = new HashMap<>();
 		for (ScoreTypes st : ScoreTypes.values()) {
 			scoreMap.put(st, 0);
 			pickMap.put(st, false);

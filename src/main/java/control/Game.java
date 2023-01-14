@@ -110,7 +110,7 @@ public class Game extends State implements Control {
 	}
 
 	@Override
-	public boolean endTurn() {
+	public void endTurn() {
 		if (canEnd()) {
 			currPlayer.updateScore(selected, getSelectionScore(selected));
 			selected = ScoreTypes.scoreTop;
@@ -135,6 +135,5 @@ public class Game extends State implements Control {
 			Arrays.fill(diceRollState, true);
 			rollsRem = 3;
 		}
-		return false;
 	}
 }

@@ -9,8 +9,9 @@ import java.util.Arrays;
 
 @SuppressWarnings("unused")
 public class YahtzeeMain extends JFrame {
-    private Game yahzteeGame;
+    private final Game yahzteeGame;
     private int numPlayers;
+    private int gameTurn;
     private boolean virtDice;
     private String player1Name;
     private String player2Name;
@@ -23,7 +24,7 @@ public class YahtzeeMain extends JFrame {
 
 
     private JPanel mainRoot;
-    private JPanel startRoot;
+    private JPanel offlineStartRoot;
     private JPanel playerRoot;
     private JPanel nameConfirmRoot;
     private JPanel virtDiceRoot;
@@ -210,6 +211,7 @@ public class YahtzeeMain extends JFrame {
     private JButton vdEndTurnButton;
     private JLabel vdScoreSelectionScoreValue;
     private JLabel vdScoreCardSelectionScoreLabel;
+    private JRadioButton vdInvisibleBtn;
 
 
     public YahtzeeMain(String title) {
@@ -222,6 +224,7 @@ public class YahtzeeMain extends JFrame {
 
         yahzteeGame = new Game();
         numPlayers = 2;
+        gameTurn = 0;
         virtDice = true;
 
         player1Name = null;
@@ -473,6 +476,32 @@ public class YahtzeeMain extends JFrame {
             setVDSelectedScore();
             if (yahzteeGame.canEnd()) vdEndTurnButton.setEnabled(true);
         });
+        vdEndTurnButton.addActionListener(e -> {
+            gameTurn++;
+            yahzteeGame.endTurn();
+            if (gameTurn >= 13 * numPlayers) {
+                // TODO - End game, find winner, display all score cards
+            } else {
+                vdRollsRemValue.setText("3");
+                vdRollBtn.setEnabled(true);
+                vdEndTurnButton.setEnabled(false);
+                die1Toggle.setEnabled(false);
+                die2Toggle.setEnabled(false);
+                die3Toggle.setEnabled(false);
+                die4Toggle.setEnabled(false);
+                die5Toggle.setEnabled(false);
+                die1Toggle.setSelected(true);
+                die2Toggle.setSelected(true);
+                die3Toggle.setSelected(true);
+                die4Toggle.setSelected(true);
+                die5Toggle.setSelected(true);
+                setVDPlayerName();
+                setVDiceValues();
+                setVDScoreValues();
+                setVDScoreSelectable();
+                setVDSelectedScore();
+            }
+        });
     }
 
     private void setVDScoreValues() {
@@ -510,6 +539,7 @@ public class YahtzeeMain extends JFrame {
     }
 
     private void setVDScoreSelectable() {
+        vdInvisibleBtn.setSelected(true);
         vdOnesScoreBtn.setEnabled(!yahzteeGame.currPlayer.pickMap.get(ScoreTypes.scoreOne));
         vdTwosScoreBtn.setEnabled(!yahzteeGame.currPlayer.pickMap.get(ScoreTypes.scoreTwo));
         vdThreesScoreBtn.setEnabled(!yahzteeGame.currPlayer.pickMap.get(ScoreTypes.scoreThree));
@@ -527,6 +557,11 @@ public class YahtzeeMain extends JFrame {
     }
 
     private void setVDSelectedScore() {
+        if (yahzteeGame.selected == null) {
+            vdScoreCardSelectionValue.setText("none");
+            vdScoreSelectionScoreValue.setText("0");
+            return;
+        }
         switch (yahzteeGame.selected) {
             case scoreOne -> vdScoreCardSelectionValue.setText("Ones");
             case scoreTwo -> vdScoreCardSelectionValue.setText("Twos");

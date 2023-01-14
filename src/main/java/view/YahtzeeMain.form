@@ -11,7 +11,7 @@
     </properties>
     <border type="none"/>
     <children>
-      <grid id="f79c9" binding="startRoot" layout-manager="GridLayoutManager" row-count="11" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="f79c9" binding="offlineStartRoot" layout-manager="GridLayoutManager" row-count="11" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <card name="startCard"/>
@@ -2097,7 +2097,7 @@
                       </grid>
                     </children>
                   </grid>
-                  <grid id="6b00a" binding="vdSelectionPane" layout-manager="GridLayoutManager" row-count="6" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                  <grid id="6b00a" binding="vdSelectionPane" layout-manager="GridLayoutManager" row-count="6" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                     <margin top="0" left="0" bottom="0" right="0"/>
                     <constraints>
                       <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -2116,7 +2116,7 @@
                       </component>
                       <component id="762e7" class="javax.swing.JLabel" binding="vdHowToInfo5">
                         <constraints>
-                          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
                           <font name="Consolas" size="12" style="0"/>
@@ -2127,7 +2127,7 @@
                       </component>
                       <component id="b19b" class="javax.swing.JLabel" binding="vdHowToInfo6">
                         <constraints>
-                          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
                           <font name="Consolas" size="12" style="0"/>
@@ -2138,7 +2138,7 @@
                       </component>
                       <component id="898b6" class="javax.swing.JLabel" binding="vdHowToInfo4">
                         <constraints>
-                          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
                           <font name="Consolas" size="12" style="0"/>
@@ -2150,7 +2150,7 @@
                       <grid id="83558" binding="vdSelectionSpacer" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                         <margin top="0" left="0" bottom="0" right="0"/>
                         <constraints>
-                          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                          <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
                             <minimum-size width="-1" height="5"/>
                             <preferred-size width="-1" height="5"/>
                             <maximum-size width="-1" height="5"/>
@@ -2162,7 +2162,7 @@
                       </grid>
                       <component id="ea714" class="javax.swing.JLabel" binding="vdScoreCardSelectionValue">
                         <constraints>
-                          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
                             <minimum-size width="120" height="-1"/>
                             <preferred-size width="120" height="-1"/>
                             <maximum-size width="120" height="-1"/>
@@ -2189,7 +2189,7 @@
                       </component>
                       <component id="d5d2e" class="javax.swing.JLabel" binding="vdScoreSelectionScoreValue">
                         <constraints>
-                          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
                           <focusable value="false"/>
@@ -2197,6 +2197,20 @@
                           <horizontalAlignment value="0"/>
                           <horizontalTextPosition value="0"/>
                           <text value="0"/>
+                        </properties>
+                      </component>
+                      <component id="38da8" class="javax.swing.JRadioButton" binding="vdInvisibleBtn">
+                        <constraints>
+                          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <enabled value="false"/>
+                          <focusable value="false"/>
+                          <horizontalAlignment value="0"/>
+                          <horizontalTextPosition value="0"/>
+                          <margin top="0" left="0" bottom="0" right="0"/>
+                          <text value=""/>
+                          <visible value="false"/>
                         </properties>
                       </component>
                     </children>
@@ -2328,6 +2342,7 @@
       <member id="619aa"/>
       <member id="e114f"/>
       <member id="4caf0"/>
+      <member id="38da8"/>
     </group>
   </buttonGroups>
 </form>
