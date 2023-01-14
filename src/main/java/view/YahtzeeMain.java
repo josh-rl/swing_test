@@ -481,6 +481,7 @@ public class YahtzeeMain extends JFrame {
             yahzteeGame.endTurn();
             if (gameTurn >= 13 * numPlayers) {
                 // TODO - End game, find winner, display all score cards
+                ((CardLayout) mainRoot.getLayout()).show(mainRoot, "endGameCard");
             } else {
                 vdRollsRemValue.setText("3");
                 vdRollBtn.setEnabled(true);
