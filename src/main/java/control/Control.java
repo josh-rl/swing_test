@@ -1,8 +1,5 @@
 package control;
 
-import model.ScoreTypes;
-
-
 /**
  * Defines game operations
  */
@@ -22,9 +19,7 @@ public interface Control {
 	void toggleDie4();
 	void toggleDie5();
 	boolean canRoll();
-	void doRolls(int rolls);
-	boolean canSelect(ScoreTypes st);
-	void makeSelection(ScoreTypes st);
+	void doRolls();
 	boolean canEnd();
 	boolean endTurn();
 }

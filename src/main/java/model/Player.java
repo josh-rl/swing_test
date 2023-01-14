@@ -9,6 +9,7 @@ public class Player {
 	public static int playerCount = 0;
 	public String name;
 	public HashMap<ScoreTypes, Integer> scoreMap;
+	public HashMap<ScoreTypes, Boolean> pickMap;
 	public int yahtzeeCount;
 
 	/**
@@ -20,6 +21,7 @@ public class Player {
 		scoreMap = new HashMap<>();
 		for (ScoreTypes st : ScoreTypes.values()) {
 			scoreMap.put(st, 0);
+			pickMap.put(st, false);
 		}
 		yahtzeeCount = 0;
 	}
@@ -34,6 +36,7 @@ public class Player {
 		scoreMap = new HashMap<>();
 		for (ScoreTypes st : ScoreTypes.values()) {
 			scoreMap.put(st, 0);
+			pickMap.put(st, false);
 		}
 		yahtzeeCount = 0;
 	}
@@ -45,6 +48,7 @@ public class Player {
 	 */
 	public void updateScore(ScoreTypes st, int num) {
 		scoreMap.put(st, num);
+		pickMap.put(st, true);
 	}
 
 	/**

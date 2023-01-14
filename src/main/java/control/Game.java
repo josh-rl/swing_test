@@ -90,31 +90,18 @@ public class Game extends State implements Control {
 
 	@Override
 	public boolean canRoll() {
+		if (!diceRollState[0] && !diceRollState[1] && !diceRollState[2] && !diceRollState[3] && !diceRollState[4])
+			return false;
 		return rollsRem > 0;
 	}
 
 	@Override
-	public void doRolls(int rolls) {
-		for (int i = 0; i < rolls; i++) {
-			if (diceRollState[0]) rollDie1();
-			if (diceRollState[1]) rollDie2();
-			if (diceRollState[2]) rollDie3();
-			if (diceRollState[3]) rollDie4();
-			if (diceRollState[4]) rollDie5();
-		}
-		setState();
-	}
-
-	@Override
-	public boolean canSelect(ScoreTypes st) {
-		if (st == ScoreTypes.scoreYahtzeeBonus && currPlayer.yahtzeeCount < 1)
-			return false;
-		return currPlayer.scoreMap.get(st) == 0;
-	}
-
-	@Override
-	public void makeSelection(ScoreTypes st) {
-		if (canSelect(st)) selected = st;
+	public void doRolls() {
+		if (diceRollState[0]) rollDie1();
+		if (diceRollState[1]) rollDie2();
+		if (diceRollState[2]) rollDie3();
+		if (diceRollState[3]) rollDie4();
+		if (diceRollState[4]) rollDie5();
 	}
 
 	@Override
