@@ -1032,6 +1032,7 @@
                           <font name="Consolas" size="12" style="0"/>
                           <horizontalAlignment value="0"/>
                           <horizontalTextPosition value="0"/>
+                          <iconTextGap value="0"/>
                           <margin top="0" left="0" bottom="0" right="0"/>
                           <text value=""/>
                           <verticalAlignment value="0"/>
@@ -1093,6 +1094,7 @@
                           <font name="Consolas" size="12" style="0"/>
                           <horizontalAlignment value="0"/>
                           <horizontalTextPosition value="0"/>
+                          <iconTextGap value="0"/>
                           <margin top="0" left="0" bottom="0" right="0"/>
                           <text value=""/>
                         </properties>
@@ -1152,6 +1154,7 @@
                           <font name="Consolas" size="12" style="0"/>
                           <horizontalAlignment value="0"/>
                           <horizontalTextPosition value="0"/>
+                          <iconTextGap value="0"/>
                           <margin top="0" left="0" bottom="0" right="0"/>
                           <text value=""/>
                         </properties>
@@ -1211,6 +1214,7 @@
                           <font name="Consolas" size="12" style="0"/>
                           <horizontalAlignment value="0"/>
                           <horizontalTextPosition value="0"/>
+                          <iconTextGap value="0"/>
                           <margin top="0" left="0" bottom="0" right="0"/>
                           <text value=""/>
                         </properties>
@@ -1270,6 +1274,7 @@
                           <font name="Consolas" size="12" style="0"/>
                           <horizontalAlignment value="0"/>
                           <horizontalTextPosition value="0"/>
+                          <iconTextGap value="0"/>
                           <margin top="0" left="0" bottom="0" right="0"/>
                           <text value=""/>
                         </properties>
@@ -1329,6 +1334,7 @@
                           <font name="Consolas" size="12" style="0"/>
                           <horizontalAlignment value="0"/>
                           <horizontalTextPosition value="0"/>
+                          <iconTextGap value="0"/>
                           <margin top="0" left="0" bottom="0" right="0"/>
                           <text value=""/>
                         </properties>
@@ -1496,6 +1502,7 @@
                           <font name="Consolas" size="12" style="0"/>
                           <horizontalAlignment value="0"/>
                           <horizontalTextPosition value="0"/>
+                          <iconTextGap value="0"/>
                           <margin top="0" left="0" bottom="0" right="0"/>
                           <text value=""/>
                         </properties>
@@ -1553,6 +1560,7 @@
                           <font name="Consolas" size="12" style="0"/>
                           <horizontalAlignment value="0"/>
                           <horizontalTextPosition value="0"/>
+                          <iconTextGap value="0"/>
                           <margin top="0" left="0" bottom="0" right="0"/>
                           <text value=""/>
                         </properties>
@@ -1610,6 +1618,7 @@
                           <font name="Consolas" size="12" style="0"/>
                           <horizontalAlignment value="0"/>
                           <horizontalTextPosition value="0"/>
+                          <iconTextGap value="0"/>
                           <margin top="0" left="0" bottom="0" right="0"/>
                           <text value=""/>
                         </properties>
@@ -1667,6 +1676,7 @@
                           <font name="Consolas" size="12" style="0"/>
                           <horizontalAlignment value="0"/>
                           <horizontalTextPosition value="0"/>
+                          <iconTextGap value="0"/>
                           <margin top="0" left="0" bottom="0" right="0"/>
                           <text value=""/>
                         </properties>
@@ -1724,6 +1734,7 @@
                           <font name="Consolas" size="12" style="0"/>
                           <horizontalAlignment value="0"/>
                           <horizontalTextPosition value="0"/>
+                          <iconTextGap value="0"/>
                           <margin top="0" left="0" bottom="0" right="0"/>
                           <text value=""/>
                         </properties>
@@ -1781,6 +1792,7 @@
                           <font name="Consolas" size="12" style="0"/>
                           <horizontalAlignment value="0"/>
                           <horizontalTextPosition value="0"/>
+                          <iconTextGap value="0"/>
                           <margin top="0" left="0" bottom="0" right="0"/>
                           <text value=""/>
                         </properties>
@@ -1838,6 +1850,7 @@
                           <font name="Consolas" size="12" style="0"/>
                           <horizontalAlignment value="0"/>
                           <horizontalTextPosition value="0"/>
+                          <iconTextGap value="0"/>
                           <margin top="0" left="0" bottom="0" right="0"/>
                           <text value=""/>
                         </properties>
@@ -1895,6 +1908,7 @@
                           <font name="Consolas" size="12" style="0"/>
                           <horizontalAlignment value="0"/>
                           <horizontalTextPosition value="0"/>
+                          <iconTextGap value="0"/>
                           <margin top="0" left="0" bottom="0" right="0"/>
                           <text value=""/>
                         </properties>
@@ -2300,7 +2314,7 @@
         <border type="none"/>
         <children/>
       </grid>
-      <grid id="21f17" binding="endGameRoot" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="21f17" binding="endGameRoot" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <card name="endGameCard"/>
@@ -2311,7 +2325,1176 @@
           <preferredSize width="-1" height="-1"/>
         </properties>
         <border type="none"/>
-        <children/>
+        <children>
+          <grid id="cfa8a" binding="endGameMidSpacer" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="20" left="0" bottom="20" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="88798" class="javax.swing.JLabel" binding="endGameOverLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Consolas" size="20" style="1"/>
+                  <text value="Game over."/>
+                </properties>
+              </component>
+              <component id="45377" class="javax.swing.JLabel" binding="winnerLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Consolas" size="20" style="1"/>
+                  <text value="Winner: "/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="59752" binding="selectPlayerEndScoreRow" layout-manager="GridLayoutManager" row-count="1" column-count="8" same-size-horizontally="false" same-size-vertically="false" hgap="10" vgap="0">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <hspacer id="22884">
+                <constraints>
+                  <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="cd313">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <component id="a42db" class="javax.swing.JRadioButton" binding="p1EndScore">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <alignmentY value="0.0"/>
+                  <contentAreaFilled value="true"/>
+                  <focusable value="false"/>
+                  <font name="Consolas" size="12" style="0"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <iconTextGap value="2"/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                  <selected value="true"/>
+                  <text value="Player 1"/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="c9294" class="javax.swing.JRadioButton" binding="p2EndScore">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <alignmentY value="0.0"/>
+                  <focusable value="false"/>
+                  <font name="Consolas" size="12" style="0"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <iconTextGap value="2"/>
+                  <label value="Player 2"/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                  <text value="Player 2"/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="1c01c" class="javax.swing.JRadioButton" binding="p3EndScore">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <alignmentY value="0.0"/>
+                  <focusable value="false"/>
+                  <font name="Consolas" size="12" style="0"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <iconTextGap value="2"/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                  <text value="Player 3"/>
+                  <verticalTextPosition value="1"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="160c4" class="javax.swing.JRadioButton" binding="p4EndScore">
+                <constraints>
+                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <alignmentY value="0.0"/>
+                  <focusable value="false"/>
+                  <font name="Consolas" size="12" style="0"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <iconTextGap value="2"/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                  <text value="Player 4"/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="8cc7b" class="javax.swing.JRadioButton" binding="p5EndScore">
+                <constraints>
+                  <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <alignmentY value="0.0"/>
+                  <focusable value="false"/>
+                  <font name="Consolas" size="12" style="0"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <iconTextGap value="2"/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                  <text value="Player 5"/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="3e756" class="javax.swing.JRadioButton" binding="p6EndScore">
+                <constraints>
+                  <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <alignmentY value="0.0"/>
+                  <focusable value="false"/>
+                  <font name="Consolas" size="12" style="0"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <iconTextGap value="2"/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                  <text value="Player 6"/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="d1c7a" binding="playerEndScores" layout-manager="GridLayoutManager" row-count="31" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <focusable value="false"/>
+              <maximumSize width="-1" height="-1"/>
+              <minimumSize width="-1" height="-1"/>
+              <preferredSize width="-1" height="-1"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="bddef" binding="p1EndScoreR1" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="20" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="216dd" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="200" height="-1"/>
+                        <preferred-size width="200" height="-1"/>
+                        <maximum-size width="200" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.0"/>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="0"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="2"/>
+                      <text value="Ones:"/>
+                    </properties>
+                  </component>
+                  <component id="e325d" class="javax.swing.JLabel" binding="p1onesEndScore">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="30" height="-1"/>
+                        <preferred-size width="30" height="-1"/>
+                        <maximum-size width="30" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.0"/>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="1"/>
+                      <horizontalAlignment value="4"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <hspacer id="ce11c">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="9639e">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <grid id="2e9dc" binding="p1EndScoreR2" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="825ee" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="200" height="-1"/>
+                        <preferred-size width="200" height="-1"/>
+                        <maximum-size width="200" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.0"/>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="0"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="2"/>
+                      <text value="Twos:"/>
+                    </properties>
+                  </component>
+                  <component id="8340e" class="javax.swing.JLabel" binding="p1twoEndScore">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="30" height="-1"/>
+                        <preferred-size width="30" height="-1"/>
+                        <maximum-size width="30" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.0"/>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="1"/>
+                      <horizontalAlignment value="4"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <hspacer id="8a50c">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="5bcbb">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <grid id="7118c" binding="p1EndScoreR3" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <hspacer id="131a0">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="78d97">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <component id="e3989" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="200" height="-1"/>
+                        <preferred-size width="200" height="-1"/>
+                        <maximum-size width="200" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.0"/>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="0"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="2"/>
+                      <text value="Threes:"/>
+                    </properties>
+                  </component>
+                  <component id="c8bca" class="javax.swing.JLabel" binding="p1threeEndScore">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="30" height="-1"/>
+                        <preferred-size width="30" height="-1"/>
+                        <maximum-size width="30" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.0"/>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="1"/>
+                      <horizontalAlignment value="4"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="2b6fe" binding="p1EndScoreR4" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="813f3" class="javax.swing.JLabel" binding="p1foursEndScore">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="30" height="-1"/>
+                        <preferred-size width="30" height="-1"/>
+                        <maximum-size width="30" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.0"/>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="1"/>
+                      <horizontalAlignment value="4"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <hspacer id="9e122">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="36aae">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <component id="9eb3f" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="200" height="-1"/>
+                        <preferred-size width="200" height="-1"/>
+                        <maximum-size width="200" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.0"/>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="0"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="2"/>
+                      <text value="Fours:"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="a7ad8" binding="p1EndScoreR5" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="b373b" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="200" height="-1"/>
+                        <preferred-size width="200" height="-1"/>
+                        <maximum-size width="200" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.0"/>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="0"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="2"/>
+                      <text value="Fives:"/>
+                    </properties>
+                  </component>
+                  <component id="56e15" class="javax.swing.JLabel" binding="p1fivesEndScore">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="30" height="-1"/>
+                        <preferred-size width="30" height="-1"/>
+                        <maximum-size width="30" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.0"/>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="1"/>
+                      <horizontalAlignment value="4"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <hspacer id="abf0a">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="3bcfa">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <grid id="b0f16" binding="p1EndScoreR6" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="e983" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="200" height="-1"/>
+                        <preferred-size width="200" height="-1"/>
+                        <maximum-size width="200" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.0"/>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="0"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="2"/>
+                      <text value="Sixes:"/>
+                    </properties>
+                  </component>
+                  <component id="d3ede" class="javax.swing.JLabel" binding="p1sixesEndScore">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="30" height="-1"/>
+                        <preferred-size width="30" height="-1"/>
+                        <maximum-size width="30" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.0"/>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="1"/>
+                      <horizontalAlignment value="4"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <hspacer id="b8569">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="f0cf1">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <grid id="3094a" binding="p1EndScoreR7" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="1dea2" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="200" height="-1"/>
+                        <preferred-size width="200" height="-1"/>
+                        <maximum-size width="200" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="0"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="2"/>
+                      <text value="Total:"/>
+                    </properties>
+                  </component>
+                  <component id="a9f7e" class="javax.swing.JLabel" binding="p1toptotalEndScore">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="30" height="-1"/>
+                        <preferred-size width="30" height="-1"/>
+                        <maximum-size width="30" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="1"/>
+                      <horizontalAlignment value="4"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <hspacer id="7f1d1">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="71198">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <grid id="8488b" binding="p1EndScoreR8" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="17" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="4565f" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="200" height="-1"/>
+                        <preferred-size width="200" height="-1"/>
+                        <maximum-size width="200" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="0"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="2"/>
+                      <text value="Bonus (63 or more):"/>
+                    </properties>
+                  </component>
+                  <component id="ef9e" class="javax.swing.JLabel" binding="p1bonusEndScore">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="30" height="-1"/>
+                        <preferred-size width="30" height="-1"/>
+                        <maximum-size width="30" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="1"/>
+                      <horizontalAlignment value="4"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <hspacer id="31023">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="9f1bb">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <grid id="361c5" binding="p1EndScoreR9" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="18" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="e63e5" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="200" height="-1"/>
+                        <preferred-size width="200" height="-1"/>
+                        <maximum-size width="200" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="0"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="2"/>
+                      <text value="Total (w/ bonus):"/>
+                    </properties>
+                  </component>
+                  <component id="b377" class="javax.swing.JLabel" binding="p1topgrandtotalEndScore">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="30" height="-1"/>
+                        <preferred-size width="30" height="-1"/>
+                        <maximum-size width="30" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="1"/>
+                      <horizontalAlignment value="4"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <hspacer id="d1288">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="534fe">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <grid id="59380" binding="p1EndScoreR10" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="19" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="a3581" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="200" height="-1"/>
+                        <preferred-size width="200" height="-1"/>
+                        <maximum-size width="200" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="0"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="2"/>
+                      <text value="3-of-kind:"/>
+                    </properties>
+                  </component>
+                  <component id="33b0f" class="javax.swing.JLabel" binding="p13okEndScore">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="30" height="-1"/>
+                        <preferred-size width="30" height="-1"/>
+                        <maximum-size width="30" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="1"/>
+                      <horizontalAlignment value="4"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <hspacer id="ec366">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="5136d">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <grid id="b5da8" binding="p1EndScoreR11" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="20" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="62232" class="javax.swing.JLabel" binding="p14okEndScore">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="30" height="-1"/>
+                        <preferred-size width="30" height="-1"/>
+                        <maximum-size width="30" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="1"/>
+                      <horizontalAlignment value="4"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <component id="9ac90" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="200" height="-1"/>
+                        <preferred-size width="200" height="-1"/>
+                        <maximum-size width="200" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="0"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="2"/>
+                      <text value="4-of-kind:"/>
+                    </properties>
+                  </component>
+                  <hspacer id="5f959">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="adf0b">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <grid id="85bc7" binding="p1EndScoreR12" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="21" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="7c51a" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="200" height="-1"/>
+                        <preferred-size width="200" height="-1"/>
+                        <maximum-size width="200" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="0"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="2"/>
+                      <text value="Full-house:"/>
+                    </properties>
+                  </component>
+                  <component id="955f7" class="javax.swing.JLabel" binding="p1fhEndScore">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="30" height="-1"/>
+                        <preferred-size width="30" height="-1"/>
+                        <maximum-size width="30" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="1"/>
+                      <horizontalAlignment value="4"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <hspacer id="d56">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="1bfe">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <grid id="91986" binding="p1EndScoreR13" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="22" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="44bbc" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="200" height="-1"/>
+                        <preferred-size width="200" height="-1"/>
+                        <maximum-size width="200" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="0"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="2"/>
+                      <text value="Small Straight:"/>
+                    </properties>
+                  </component>
+                  <component id="b6e85" class="javax.swing.JLabel" binding="p1smstrEndScore">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="30" height="-1"/>
+                        <preferred-size width="30" height="-1"/>
+                        <maximum-size width="30" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="1"/>
+                      <horizontalAlignment value="4"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <hspacer id="76c9f">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="4b66c">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <grid id="83268" binding="p1EndScoreR14" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="23" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="e36b0" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="200" height="-1"/>
+                        <preferred-size width="200" height="-1"/>
+                        <maximum-size width="200" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="0"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="2"/>
+                      <text value="Large Straight:"/>
+                    </properties>
+                  </component>
+                  <component id="21337" class="javax.swing.JLabel" binding="p1lgstrEndScore">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="30" height="-1"/>
+                        <preferred-size width="30" height="-1"/>
+                        <maximum-size width="30" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="1"/>
+                      <horizontalAlignment value="4"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <hspacer id="80db3">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="b46a4">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <grid id="c00e5" binding="p1EndScoreR15" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="24" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="add32" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="200" height="-1"/>
+                        <preferred-size width="200" height="-1"/>
+                        <maximum-size width="200" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="0"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="2"/>
+                      <text value="Yahtzee:"/>
+                    </properties>
+                  </component>
+                  <component id="e7af" class="javax.swing.JLabel" binding="p1yahtzeeEndScore">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="30" height="-1"/>
+                        <preferred-size width="30" height="-1"/>
+                        <maximum-size width="30" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="1"/>
+                      <horizontalAlignment value="4"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <hspacer id="9cd1b">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="9f68f">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <grid id="fbd8f" binding="p1EndScoreR16" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="25" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="9e70c" class="javax.swing.JLabel" binding="p1chanceEndScore">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="30" height="-1"/>
+                        <preferred-size width="30" height="-1"/>
+                        <maximum-size width="30" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="1"/>
+                      <horizontalAlignment value="4"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <component id="2fcdb" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="200" height="-1"/>
+                        <preferred-size width="200" height="-1"/>
+                        <maximum-size width="200" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="0"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="2"/>
+                      <text value="Chance"/>
+                    </properties>
+                  </component>
+                  <hspacer id="3834e">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="b647f">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <grid id="e96b1" binding="p1EndScoreR17" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="26" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="d0c9" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="200" height="-1"/>
+                        <preferred-size width="200" height="-1"/>
+                        <maximum-size width="200" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="0"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="2"/>
+                      <text value="Bonus Yahtzee's:"/>
+                    </properties>
+                  </component>
+                  <component id="1e7db" class="javax.swing.JLabel" binding="p1yahtzeebonusEndScore">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="30" height="-1"/>
+                        <preferred-size width="30" height="-1"/>
+                        <maximum-size width="30" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="1"/>
+                      <horizontalAlignment value="4"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <hspacer id="fa70f">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="87528">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <grid id="226ed" binding="p1EndScoreR18" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="27" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="e0bce" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="200" height="-1"/>
+                        <preferred-size width="200" height="-1"/>
+                        <maximum-size width="200" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="0"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="2"/>
+                      <text value="Total:"/>
+                    </properties>
+                  </component>
+                  <component id="a8bd8" class="javax.swing.JLabel" binding="p1bottomtotalEndScore">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="30" height="-1"/>
+                        <preferred-size width="30" height="-1"/>
+                        <maximum-size width="30" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="1"/>
+                      <horizontalAlignment value="4"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <hspacer id="8b235">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="a96df">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <grid id="4d46" binding="p1EndScoreR19" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="28" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="e8920" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="200" height="-1"/>
+                        <preferred-size width="200" height="-1"/>
+                        <maximum-size width="200" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="0"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="2"/>
+                      <text value="Grand Total:"/>
+                    </properties>
+                  </component>
+                  <component id="eb9a6" class="javax.swing.JLabel" binding="p1grandtotalEndScore">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="30" height="-1"/>
+                        <preferred-size width="30" height="-1"/>
+                        <maximum-size width="30" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Consolas" size="12" style="1"/>
+                      <horizontalAlignment value="4"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <hspacer id="60593">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="2e68a">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <vspacer id="515d0">
+                <constraints>
+                  <grid row="29" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+        </children>
       </grid>
     </children>
   </grid>
@@ -2343,6 +3526,15 @@
       <member id="e114f"/>
       <member id="4caf0"/>
       <member id="38da8"/>
+    </group>
+    <group name="selectPlayerEndScoreGroup">
+      <member id="1c01c"/>
+      <member id="1c01c"/>
+      <member id="8cc7b"/>
+      <member id="a42db"/>
+      <member id="160c4"/>
+      <member id="c9294"/>
+      <member id="3e756"/>
     </group>
   </buttonGroups>
 </form>

@@ -212,6 +212,55 @@ public class YahtzeeMain extends JFrame {
     private JLabel vdScoreSelectionScoreValue;
     private JLabel vdScoreCardSelectionScoreLabel;
     private JRadioButton vdInvisibleBtn;
+    private JLabel winnerLabel;
+    private JPanel playerEndScores;
+    private JPanel endGameMidSpacer;
+    private JLabel endGameOverLabel;
+    private JRadioButton p1EndScore;
+    private JRadioButton p2EndScore;
+    private JRadioButton p3EndScore;
+    private JRadioButton p4EndScore;
+    private JRadioButton p5EndScore;
+    private JRadioButton p6EndScore;
+    private JPanel selectPlayerEndScoreRow;
+    private JLabel p1onesEndScore;
+    private JLabel p1twoEndScore;
+    private JLabel p1threeEndScore;
+    private JLabel p1foursEndScore;
+    private JLabel p1fivesEndScore;
+    private JLabel p1sixesEndScore;
+    private JLabel p1toptotalEndScore;
+    private JLabel p1bonusEndScore;
+    private JLabel p1topgrandtotalEndScore;
+    private JLabel p13okEndScore;
+    private JLabel p14okEndScore;
+    private JLabel p1fhEndScore;
+    private JLabel p1smstrEndScore;
+    private JLabel p1lgstrEndScore;
+    private JLabel p1yahtzeeEndScore;
+    private JLabel p1chanceEndScore;
+    private JLabel p1yahtzeebonusEndScore;
+    private JLabel p1bottomtotalEndScore;
+    private JLabel p1grandtotalEndScore;
+    private JPanel p1EndScoreR1;
+    private JPanel p1EndScoreR2;
+    private JPanel p1EndScoreR3;
+    private JPanel p1EndScoreR4;
+    private JPanel p1EndScoreR5;
+    private JPanel p1EndScoreR6;
+    private JPanel p1EndScoreR7;
+    private JPanel p1EndScoreR8;
+    private JPanel p1EndScoreR9;
+    private JPanel p1EndScoreR10;
+    private JPanel p1EndScoreR11;
+    private JPanel p1EndScoreR12;
+    private JPanel p1EndScoreR13;
+    private JPanel p1EndScoreR14;
+    private JPanel p1EndScoreR15;
+    private JPanel p1EndScoreR16;
+    private JPanel p1EndScoreR17;
+    private JPanel p1EndScoreR18;
+    private JPanel p1EndScoreR19;
 
 
     public YahtzeeMain(String title) {
@@ -306,7 +355,8 @@ public class YahtzeeMain extends JFrame {
             virtDice = false;
             diceModeConfirm.setText("Real");
         });
-        toPlayerNames.addActionListener(e -> ((CardLayout) mainRoot.getLayout()).show(mainRoot, "playerCard"));
+//        toPlayerNames.addActionListener(e -> ((CardLayout) mainRoot.getLayout()).show(mainRoot, "playerCard"));
+        toPlayerNames.addActionListener(e -> ((CardLayout) mainRoot.getLayout()).show(mainRoot, "endGameCard"));
         playerNamesBack.addActionListener(e -> ((CardLayout) mainRoot.getLayout()).show(mainRoot, "startCard"));
         playerNamesConfirmBtn.addActionListener(e -> {
             player1Name = player1Input.getText();
